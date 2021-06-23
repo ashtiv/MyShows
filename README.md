@@ -1,7 +1,7 @@
 # MyShows
-MyShows app uses tvamaze api to fetch data about tv shows that matches your search.
+MyShows app uses tvmaze api to fetch data about tv shows that matches your search.
 
-### Get the app <a href="https://github.com/ashtiv/Do-This/raw/main/app/Do%20This.apk">here</a>
+### Get the app <a href="https://raw.githubusercontent.com/ashtiv/MyShows/master/Myshows/app/My%20Shows.apk">here</a>
 
 # Screenshots:
 <img src="https://raw.githubusercontent.com/ashtiv/MyShows/master/Myshows/app/Screenshot_2021-06-22-21-17-35-59_b1e2e2f960918b7e95f61af9cba1c781.png" alt="alt text" width="200">
