@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01010B"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/logo_mainact"
+        android:background="@drawable/logo_transparent"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/idLLsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5">
+        <EditText
+            android:id="@+id/idEdtSearchBooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_weight="4"
+            android:layout_marginTop="4dp"
+            android:hint="Name of the show"
+            android:textColorHint="#808398"
+            android:textColor="#808398"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#131315"/>
+
+        <!--image button for our search button -->
+        <TextView
+            android:id="@+id/idBtnSearch"
+            android:layout_width="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:text="Search"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_search"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVBooks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/idLLsearch" />
+    <ProgressBar
+        android:id="@+id/idLoadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
